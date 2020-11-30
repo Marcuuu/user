@@ -33,8 +33,35 @@ You can assume your implementation can be completed in 5 hours. Normally, it cou
 
 ## Steps and commands to run the application
 
-You can append to the existing README.md file the steps to run the application and api endpoints
+1. Run `npm i` to install dependencies
+2. Run `node server.js` to start the server
 
 ## API testing commands
 
 Append your test endpoint details
+
+1. `curl http://localhost:8080/api/messages`
+    Payload: 
+    StatusCode        : 200
+    StatusDescription : OK
+                        2020"},{"_id":"5fc4778cd58d657c9812ae5b","name":"bbbb","message":"cccc","date":"1/10/2020"}]
+    RawContent        : HTTP/1.1 200 OK
+                        Access-Control-Allow-Origin: *
+                        Vary: Origin
+                        Connection: keep-alive
+                        Content-Length: 191
+                        Content-Type: application/json; charset=utf-8
+                        Date: Mon, 30 Nov 2020 04:57:16 GMT
+                        ETag: W/...
+    Forms             : {}
+    Headers           : {[Access-Control-Allow-Origin, *], [Vary, Origin], [Connection, keep-alive], [Content-Length,
+                        191]...}
+    Images            : {}
+    InputFields       : {}
+    Links             : {}
+    ParsedHtml        : mshtml.HTMLDocumentClass
+    RawContentLength  : 191
+
+2. `curl http://localhost:8080/api/add-message`
+
+3. `curl http://localhost:8080/api/update-message`
